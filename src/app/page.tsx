@@ -1,17 +1,19 @@
-import Hero from "@/components/Hero";
+import Navigation from '@/components/layout/Navigation';
+import Footer from '@/components/layout/Footer';
+import Hero from '@/components/sections/Hero';
+import Stats from '@/components/sections/Stats';
+import Events from '@/components/sections/Events';
+import Timeline from '@/components/sections/Timeline';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white flex items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-7xl font-bold">CYBORG</h1>
-        <p className="mt-4 text-cyan-400 tracking-[0.5em]">
-          HUMAN • MACHINE • EVOLVED
-        </p>
-      </div>
-    </main>
+    <>
+      <Navigation />
+      <Hero />
+      <Stats />
+      <Events />
+      <Timeline />
+      <Footer />
+    </>
   );
-
-return <Hero />;
-
 }
